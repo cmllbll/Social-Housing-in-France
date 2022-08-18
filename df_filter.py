@@ -38,7 +38,7 @@ def main(path_to_excel_files_dir: str, codes_geographiques: dict[str, List[str]]
         if not el.startswith(("."))
     ]
 
-    files = files[:3]
+    files = files[:2]
     with tqdm(total=3 * len(files), ascii="░▒█") as pbar:
 
         df = pd.read_excel(files[0], header=7).dropna(axis=1, how="all")
