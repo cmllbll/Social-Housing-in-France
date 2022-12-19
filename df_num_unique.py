@@ -48,7 +48,7 @@ def main(path_to_excel_files_dir: str):
             dfd = x
 
 
-    return {"Revenus_Marseille": dfd}
+    return {"Revenus_MGP": dfd}
 
 
 if __name__ == "__main__":
